@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top);
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.096),
+    rgba(255, 166, 0, 0.105)
+  );
+}
+
+.head_container {
+  width: 1160px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search_bar {
+  position: relative;
+}
+.search_bar input {
+  height: 30px;
+  width: 250px;
+  background-color: #333;
+  outline: none;
+  color: whitesmoke;
+  padding: 0 10px;
+  border: none;
+  font-weight: 600;
+  border-radius: 14px;
+  z-index: 10;
+}
+.btn {
+  position: absolute;
+  top: 8px;
+  left: 220px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+}
+.btn_random {
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.fav_btn {
+  width: 180px;
+  height: 30px;
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 600px;
+  cursor: pointer;
+}
+
+.fav_btn:hover {
+  background-color: lightgray;
+  color: #333;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.main_container .meal_card {
+  background-color: #feb236;
+  width: 320px;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.meal_card img {
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.favorite-icon {
+  color: aliceblue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.favorite-icon:active {
+  color: #333;
+}
+
+.favorite-list-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.favorite-list-item {
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+h2 {
+  cursor: pointer;
+}
+
+
+/* Additional styles for tablets and small devices */
+
+@media only screen and (max-width: 768px) {
+  .head_container {
+    width: 90%;
+  }
+
+  .search_bar input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    left: 80%;
+  }
+
+  .fav_btn {
+    margin-left: 0;
+  }
+}
